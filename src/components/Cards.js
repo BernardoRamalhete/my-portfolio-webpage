@@ -51,6 +51,7 @@ function Cards({ cellPhone }) {
   if (cellPhone) {
     return (
       <section className='cards-section'>
+      <h2 className='section-title techs'>&lt;techs&gt;</h2>
         <div className='card-row'>
 
           <div className='card' onMouseEnter={() => setReactIconColor('#02020a')} onMouseLeave={() => setReactIconColor('#f0386b')}>
