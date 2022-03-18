@@ -95,11 +95,13 @@
 
 @media (max-width: 760px) {
     .HomePageBody {
-        width: 100vw;
+        width: 90vw;
+        margin: 0;
     }
 
     .greeting {
         margin: 0;
+        margin-left: 5vw;
     }
 
     .page-top {
@@ -110,5 +112,6 @@
     .btn-cv {
         margin: 0;
         margin-top: 50px;
+        margin-left: 5vw
     }
 }

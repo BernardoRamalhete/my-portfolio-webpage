@@ -76,8 +76,7 @@
 
 @media (max-width: 760px) {
     .menu-container{
-        margin: 10px;
-        margin-right: 0;
-        width: 110vw;
+        margin: 10vh 0vh 0 -3vh ;
+        width: 100vw;
     }
 }

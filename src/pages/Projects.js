@@ -9,6 +9,7 @@ function Projects() {
     const [menuControl, setMenuControl] = useState(false)
     const [contactControl, setContactControl] = useState(false)
     const [imgHovered, setImgHovered] = useState(false)
+    const [iconSize, setIconSize] = useState('150px')
 
     const reactIcon = <svg className='project-icon-img' viewBox="0 0 128 128">
         <g fill="#F0386B">
@@ -49,7 +50,7 @@ function Projects() {
             picture: "project-img2",
             link: 'https://paola-ramalhete.web.app/',
             repository: 'https://github.com/BernardoRamalhete/site-paola-ramalhete',
-            description: "Personal single website to a personal stylist. The site was made using react to make the content flow easier and faster, with a minimalist design and using custom fonts. The content is dynamically loaded as the user select in the top menu witch section it needs to view.",
+            description: "Personal single page website made to a brazilian personal stylist. This site was made using react to make the content flow easier and faster, this with a minimalist design and the use of custom fonts make a clean and reactive website. The code is entirelly controled by react hooks, not utilising react-router to go from page to page. This way  the content is dynamically loaded as the user select between the options in the top menu.",
             infoTechs: 'Frontend',
             icons: [reactIcon, javaScriptIcon, htmlIcon, cssIcon]
         }
@@ -83,8 +84,10 @@ function Projects() {
     useEffect(()=> {
         if(pageWidth <= 760) {
             setCellPhone(true)
+            setIconSize('70px')
         } else {
             setCellPhone(false)
+            setIconSize('150px')
         }
         return (window.removeEventListener('resize', handleResize))
     }, [pageWidth])
@@ -107,8 +110,8 @@ function Projects() {
 
                 <div className='project-arrows'>
 
-                    <div className='left-arrow' onClick={handleLeftArrow}><ArrowRightIcon sx={{ transform: 'rotate(180deg)', fontSize: '150px', color: '#EFE9E7' }} /></div>
-                    <div className='right-arrow' onClick={handleRightArrow}><ArrowRightIcon sx={{ fontSize: '150px', color: '#EFE9E7' }} /></div>
+                    <div className='left-arrow' onClick={handleLeftArrow}><ArrowRightIcon sx={{ transform: 'rotate(180deg)', fontSize: iconSize, color: '#EFE9E7' }} /></div>
+                    <div className='right-arrow' onClick={handleRightArrow}><ArrowRightIcon sx={{ fontSize: iconSize, color: '#EFE9E7' }} /></div>
                 </div>
 
                 <div className='projects-holder'>

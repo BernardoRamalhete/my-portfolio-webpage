@@ -55,11 +55,11 @@ function About() {
                             <h2 className='about-contact-h2'>Wanna get in touch?</h2>
                             <p className='about-contact-p'>Reach out via the contact form in the top menu, or you can just use these:</p>
                             <div className='about-contact-info'>
-                                <div className='about-contact-email'>
+                                <div className='about-contact-wpp'>
                                     <a style={{color: '#efe9e7'}} href='https://whatsa.me/5535991526033'><WhatsAppIcon sx={{fontSize: '40px', cursor:'pointer', transition: 'all 0.5s ease', '&:hover': {fontSize: '50px'}}}/></a>
                                     <p className='about-contact-item'>+55 35 9 9152-6033</p>
                                 </div>
-                                <div className='about-contact-wpp'>
+                                <div className='about-contact-email'>
                                     <a style={{color: '#efe9e7'}} href='mailto:fb@hsjonline.com'><EmailIcon sx={{fontSize: '40px', cursor:'pointer', transition: 'all 0.5s ease', '&:hover': {fontSize: '50px'}}}/></a>
                                     <p className='about-contact-item'>fb@hsjonline.com</p>
                                 </div>

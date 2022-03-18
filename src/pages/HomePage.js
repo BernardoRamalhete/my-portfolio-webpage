@@ -37,7 +37,7 @@ function HomePage() {
     <>
       <Menu menuControl={menuControl} setMenuControl={setMenuControl} />
 
-      <MenuModal menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
+      <MenuModal cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
 
       <Contact contactControl={contactControl} setContactControl={setContactControl}/>
 
