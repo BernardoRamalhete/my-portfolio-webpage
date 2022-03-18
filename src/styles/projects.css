@@ -212,6 +212,7 @@
             margin: 0;
             width: 100vw;
             min-width: 0;
+            margin-top: 7vh;
         }
 
       .projects-holder {
@@ -221,6 +222,7 @@
           bottom: -200vh;
           left: 0;
           top: 10%;
+          margin-top: 12vh;
           
       }
 
@@ -239,10 +241,11 @@
       }
 
       .project-title {
-        font-size: 50px;
+        font-size: 40px;
         position: relative;
         top: 4em;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
+        white-space: nowrap;
       }
 
       .project-body {
@@ -258,8 +261,8 @@
       }
 
       .project-description {
-          width: 100vw;
-          margin: 20px;
+          width: 90vw;
+          margin: 0px;
       }
 
       .project-icons {
@@ -277,7 +280,8 @@
           top: 40vh;
           margin: 0 20vw;
           text-align: center;
-          text-shadow: 0px 0px 10px #02020a
+          text-shadow: 0px 0px 10px #02020a;
+          white-space: nowrap;
       }
 
       .project-github {
