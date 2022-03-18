@@ -36,7 +36,7 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 80vh;
+    bottom: 110vh;
     right: 5vw;
     margin-bottom: -550px;
 }
@@ -45,6 +45,61 @@
     width: 550px;
     margin: -60px;
     margin-bottom: -700px;
+}
+
+.about-contact {
+    color: #02020a;
+    background-color: #f0386c;
+    width: 40vw;
+    padding: 30px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 
+        -9px -9px 20px 0px #eb7fa73a, 
+        -4px -4px 5px 0px #eb7fa73a, 
+        7px 7px 20px 0px #b51c545a, 
+        4px 4px 5px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a;
+    margin: 0 auto;
+    position: relative;
+    bottom: 17vh;
+    z-index: 5;
+}
+
+.about-contact-h2 {
+    font-size: 30px;
+    margin: 10px;
+    margin-bottom: 20px;
+    color: #efe9e7
+}
+
+.about-contact-p {
+    font-size: 20px;
+}
+
+.about-contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    margin-top: 20px;
+}
+
+.about-contact-email,
+.about-contact-wpp {
+    color: #efe9e7;
+    border: 1px solid #efe9e7;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease
+}
+
+.about-contact-item {
+    color: #02020a;
+    margin-top: 20px;
+    font-size: 20px;
 }
 
 @media (max-width: 760px) {
@@ -75,5 +130,11 @@
 
     .bernardo-ramalhete {
         margin: -60px;
+    }
+
+    .about-contact {
+        bottom: 0;
+        width: 90vw;
+        margin-left: 10vw;
     }
 }
