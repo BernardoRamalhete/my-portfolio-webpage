@@ -20,6 +20,7 @@ function HomePage() {
     }
     
     useEffect(()=> {
+      console.log('Hey, there :)')
         if(pageWidth <= 960) {
             setCellPhone(true)
         } else {
