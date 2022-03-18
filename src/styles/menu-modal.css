@@ -1,0 +1,123 @@
+.modal-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 97;
+    display: none;
+}
+
+
+.menu-modal {
+    display:none;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    background-image: linear-gradient(#02020a, #0d0d40);
+    padding: 30px;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    color: #EFE9E7;
+    z-index: 99;
+    box-shadow: 
+    -8px -8px 32px #0e0e48,
+    8px 8px 32px #1b1b88;
+}
+
+.modal-open {
+    display: block;
+}
+
+.menu-modal-title {
+    font-size: 40px;
+    text-align: center;
+}
+
+.menu-modal-title-item {
+    padding-bottom: 40px;
+    border-bottom: 3px solid #f0386b
+}
+
+.menu-modal-options {
+    position: relative;
+    bottom: -20px;
+}
+
+.menu-modal-option {
+    transition: margin 0.25s;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 2px solid #f0386b;
+    border-radius: 40px;
+    cursor: pointer;
+    background-color: #f0386b;
+    box-shadow: 
+        -9px -9px 20px 0px #eb7fa73a, 
+        -4px -4px 5px 0px #eb7fa73a, 
+        7px 7px 20px 0px #b51c545a, 
+        4px 4px 5px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a;
+    transition: all ease 0.8s;
+}
+
+.menu-modal-option:hover {
+    background-color: transparent;
+    border: 2px solid #EFE9E7;
+    box-shadow: 
+        4px 4px 20px #02020a inset,
+        -8px -8px 20px #0e0e48 inset
+}
+
+.link-to {
+    text-decoration: none;
+    color: #efe9e7;
+}
+
+.modal-close-icon {
+    display:none;
+}
+
+@media (max-width: 760px) {
+    .modal-overlay {
+        height: 500%;
+    }
+
+    .menu-modal {
+        width: 120%;
+        height: 130%;
+        position: absolute;
+        top: 10%;
+        left: 0;
+    }
+
+    .menu-modal-options {
+        z-index: 9000;
+    }
+
+    .modal-close-icon {
+        margin: 20px 40%;
+        padding: 10px;
+        background-color: #e03c78; 
+        color: #efe9e7;
+        border-radius: 50%; 
+        box-shadow:
+            -9px -9px 20px 0px #eb7fa73a, 
+            -4px -4px 5px 0px #eb7fa73a, 
+            7px 7px 20px 0px #b51c545a, 
+            4px 4px 5px 0px #b51c545a, 
+            inset 0px 0px 0px 0px #eb7fa73a, 
+            inset 0px 0px 0px 0px #b51c545a, 
+            inset 0px 0px 0px 0px #b51c545a, 
+            inset 0px 0px 0px 0px #eb7fa73a;
+        cursor: pointer;
+    }
+}

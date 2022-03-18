@@ -1,0 +1,47 @@
+.ThankYouBody {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e03c78;
+    font-family: 'Raleway', sans-serif;
+    color: #efe9e7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thanks-h1 {
+    margin: 20px;
+}
+
+.thanks-h2 {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.thanks-icon {
+    background-color: #02020a;
+    margin: 80px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.thanks-btn {
+    margin-top: 30px;
+    background-color: #02020a;
+    border: none;
+    color: #efe9e7;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 4px 4px 16px #eb7fa7, -4px -4px 16px #b51c54;
+    transition: all 0.5s ease;
+}
+
+.thanks-btn:hover {
+    border: 1px solid #efe9e71a;
+    background-color: transparent;
+    box-shadow: inset 4px 4px 16px #b51c54, inset -4px -4px 16px #eb7fa7;
+}

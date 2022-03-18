@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: linear-gradient(#02020a 60%, #0d0d40) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.section-title {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #EFE9E71a;
+    margin-top: 40px;
+}
+
+.blured {
+    filter: blur(6px);
+}
+
+@media (max-width: 760px) {
+    .section-title {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+

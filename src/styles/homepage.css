@@ -1,0 +1,114 @@
+.HomePageBody {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    color: #EFE9E7;
+    font-family: 'Raleway', sans-serif;
+    position: relative;
+    top: -130px;
+    margin-bottom: -230px;
+    transition: all 0.5s ease;
+}
+
+.greeting {
+    margin-top: 100px;
+    margin-left: 70px;
+}
+
+.greeting-top {
+    font-size: 30px;
+    position: relative;
+    top: 10px;
+}
+
+.greeting-middle {
+    font-size: 70px;
+    font-weight: 800; 
+    font-family: 'Manrope', 'Raleway', sans-serif;
+    background-image: linear-gradient(90deg, #7758c6, #e03c78);
+    background-size: 320px;
+    background-clip: text;
+    color: transparent;
+}
+
+.greeting-bottom {
+    margin-left: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.page-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-cv {
+    margin-right: 120px;
+    margin-top: 220px;
+    background-color: #e03c78;
+    width: 220px;
+    height: 60px;
+    border-radius: 22px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    box-shadow: 
+        -9px -9px 20px 0px #eb7fa73a, 
+        -4px -4px 5px 0px #eb7fa73a, 
+        7px 7px 20px 0px #b51c545a, 
+        4px 4px 5px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-cv:hover {
+    box-shadow: 
+        -9px -9px 20px 0px #eb7fa75a,
+        -4px -4px 5px 0px #eb7fa75a, 
+        7px 7px 20px 0px #b51c548a, 
+        4px 4px 5px 0px #b51c548a, 
+        inset 0px 0px 0px 0px #eb7fa75a, 
+        inset 0px 0px 0px 0px #b51c548a, 
+        inset 0px 0px 0px 0px #b51c548a, 
+        inset 0px 0px 0px 0px #eb7fa75a;
+}
+
+.btn-cv:hover .btn-in {
+    font-size: 20px;
+}
+
+.btn-in {
+    position: relative;
+    top: -10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #EFE9E7;
+    margin-right: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 760px) {
+    .HomePageBody {
+        width: 100vw;
+    }
+
+    .greeting {
+        margin: 0;
+    }
+
+    .page-top {
+        margin-top: 60px;
+        display: block;
+    }
+
+    .btn-cv {
+        margin: 0;
+        margin-top: 50px;
+    }
+}

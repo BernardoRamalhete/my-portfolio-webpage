@@ -1,0 +1,79 @@
+.AboutBody {
+    position: relative;
+    top: -130px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.about {
+    position: relative;
+    top: 150px;
+}
+
+.about-box {
+    width: 80vw;
+    margin: 150px auto;
+    padding: 50px;
+    background-image: linear-gradient(#02020a, #0d0d40);
+    border-radius: 16px;
+    box-shadow: 
+        5px 5px 20px #0f0f48 inset,
+        -5px -5px 20px #0b0b37 inset,
+        -8px -8px 32px #1a1a7f,
+        8px 8px 32px #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-text {
+    margin: 20px;
+    margin-right: 300px;
+    color: #efe9e7;
+    font-size: 25px;
+}
+
+.about-img {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 80vh;
+    right: 5vw;
+    margin-bottom: -550px;
+}
+
+.bernardo-ramalhete {
+    width: 550px;
+    margin: -60px;
+    margin-bottom: -700px;
+}
+
+@media (max-width: 760px) {
+    .about-box {
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+        box-shadow: none;
+        align-items: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .about-text {
+        order: 2;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .about-img {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 300px;
+        right: -40px;
+        margin-bottom: -300px;
+    }
+
+    .bernardo-ramalhete {
+        margin: -60px;
+    }
+}
