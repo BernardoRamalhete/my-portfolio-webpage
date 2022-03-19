@@ -51,6 +51,15 @@
     box-shadow: inset -3px -3px 7px #f9f9f93a, inset 3px 3px 5px #d1d9e6;
   }
 
+  .project-description-white {
+      color: #181818
+  }
+  
+  .github-sub {
+      color: #181818;
+  }
+
+
   @media (max-width: 760px) {
       .project-img1 {
         background-image: url('../images/netflix-clone.png');

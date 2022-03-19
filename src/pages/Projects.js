@@ -171,16 +171,15 @@ function Projects() {
                             }
 
                         </div>
-                        <p className='project-description'>
+                        <p className={darkMode? 'project-description' : 'project-description project-description-white'}>
                             {projects[projectDisplay].description}
                         </p>
                         <a className='project-github' href={projects[projectDisplay].repository} target='_blank'>
                             {gitHubIcon}
                         </a>
-                            <p className='github-sub'>Access the project repository</p>
+                            <p className={darkMode? 'github-sub' : 'github-sub-white'}>Access the project repository</p>
 
                     </section>
-
 
                 </div>
 
