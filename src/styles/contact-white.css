@@ -1,0 +1,61 @@
+.contact-modal-white {
+    background-color: #edf2f0;
+    box-shadow: 
+    -8px -8px 32px #d1d9e6,
+    8px 8px 32px #f9f9f9;
+}
+
+.contact-btn-white,
+.contact-input-white {
+  background-color: #edf2f0;
+  text-shadow: 1px 1px 0 #d1d9e6;
+}
+
+.contact-input-white {
+    box-shadow: inset 2px 2px 5px #d1d9e6, inset -5px -5px 10px #f9f9f9;
+    color: #181818
+}
+
+.contact-close-icon-white {
+    background-color: #edf2f0; 
+    color: #1818187b;
+    box-shadow:-8px -8px 32px #d1d9e6, 8px 8px 32px #f9f9f9;
+}
+
+.contact-close-icon-white:hover {
+    color: #f9f9f9;
+    background-color: #1818187b;
+}
+
+.contact-input-white:focus {
+    box-shadow: 
+    inset 1px 1px 2px #d1d9e6,
+    inset -1px -1px 2px #f9f9f9;
+}
+
+.contact-btn-white {
+    color: #1818183b;
+    box-shadow: 
+        -5px -5px 20px #f9f9f9, 
+        5px 5px 20px #d1d9e6;
+}
+
+.contact-btn-white:hover {
+    box-shadow: 
+        -2px -2px 5px #f9f9f9, 
+        2px 2px 5px #d1d9e6;
+}
+
+.contact-btn-white:active {
+    box-shadow: 
+    inset 1px 1px 2px #d1d9e6,
+    inset -1px -1px 2px #f9f9f9;
+}
+
+::placeholder {
+    color: #1818182b;
+}
+
+.loader-white {
+    color: #1818187b;
+}

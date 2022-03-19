@@ -6,6 +6,8 @@ import Cards from '../components/Cards'
 import Contact from '../components/Contact'
 import { useState, useEffect } from 'react'
 import '../styles/homepage.css'
+import '../styles/homepagewhite.css'
+import '../styles/mainWhite.css'
 
 function HomePage() {
 
@@ -13,7 +15,7 @@ function HomePage() {
   const [contactControl, setContactControl] = useState(false)
 
   const [cellPhone, setCellPhone] = useState(false)
-    const [pageWidth, setPageWidth] =useState(window.innerWidth)
+  const [pageWidth, setPageWidth] =useState(window.innerWidth)
 
     const handleResize = () => {
         setPageWidth(window.innerWidth)
@@ -32,20 +34,42 @@ function HomePage() {
 
     window.addEventListener('resize', handleResize)
 
+    const [darkMode, setDarkMode] = useState(false)
+    const [blured, setBlured] = useState(false)
+
+    useEffect(()=>{
+      if(!darkMode) {
+        document.body.classList.add('white')
+      } else {
+        document.body.classList.remove('white')
+      }
+    },[darkMode])
+
+    useEffect(()=>{
+      if(menuControl || contactControl) {
+        setBlured(true)
+      } else {
+        setBlured(false)
+      }
+    },[menuControl, contactControl])
 
   return (
     <>
-      <Menu menuControl={menuControl} setMenuControl={setMenuControl} />
+      <Menu darkMode={darkMode} menuControl={menuControl} setMenuControl={setMenuControl} />
 
-      <MenuModal cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
+      <MenuModal darkMode={darkMode} setDarkMode={setDarkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
 
-      <Contact contactControl={contactControl} setContactControl={setContactControl}/>
+      <Contact darkMode={darkMode} contactControl={contactControl} setContactControl={setContactControl}/>
 
-      <div className={menuControl || contactControl ? "HomePageBody blured" : 'HomePageBody'}>
+      <div className={
+      blured && !darkMode ? "HomePageBody HomePageBodyWhite blured" : 
+      !blured && darkMode ? 'HomePageBody' :
+      !blured && !darkMode ? 'HomePageBody HomePageBodyWhite' :
+      blured && darkMode ? 'HomePageBody blured' : ''}>
 
 
 
-        <div className='section-title'>
+        <div className={darkMode ? 'section-title' : 'section-title section-title-white'}>
           <h1>&lt;greeting&gt;</h1>
         </div>
 
@@ -53,15 +77,15 @@ function HomePage() {
 
           <div className='greeting'>
             <h3 className='greeting-top'> Hey, I'm</h3>
-            <h2 className='greeting-middle'>Bernardo</h2>
+            <h2 className={darkMode ? 'greeting-middle' : 'greeting-middle greeting-middle-white'}>Bernardo</h2>
             <h4 className='greeting-bottom'>Fullstack developer</h4>
           </div>
 
-          <button className='btn-cv'><span className='btn-in'>Download CV</span><GetAppIcon sx={{ color: '#EFE9E7', fontSize: '40px' }} /></button>
+          <button className={darkMode ? 'btn-cv' : 'btn-cv btn-cv-white'}><span className='btn-in'>Download CV</span><GetAppIcon sx={{ color: '#EFE9E7', fontSize: '40px' }} /></button>
 
         </section>
 
-        <Cards cellPhone={cellPhone}/>
+        <Cards darkMode={darkMode} cellPhone={cellPhone}/>
 
       </div>
 

@@ -104,6 +104,10 @@
         margin-left: 5vw;
     }
 
+    .greeting-middle {
+        font-size: 40px;
+    }
+
     .page-top {
         margin-top: 60px;
         display: block;

@@ -6,7 +6,6 @@
 }
 
 .menu {
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     -webkit-tap-highlight-color: transparent;
     display: flex;
     align-items: center;
@@ -76,7 +75,7 @@
 
 @media (max-width: 760px) {
     .menu-container{
-        margin: 10vh 0vh 0 -3vh ;
+        margin: 2vh 0vh 0 -4vh ;
         width: 100vw;
     }
 }

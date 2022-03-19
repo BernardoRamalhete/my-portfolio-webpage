@@ -1,5 +1,4 @@
 .ProjectsBody {
-    color: #EFE9E7;
     font-family: 'Manrope', sans-serif;
     position: relative;
     top: -130px;
@@ -179,7 +178,8 @@
     margin: 0 10px;
     box-shadow: -3px -3px 7px #171773, 3px 3px 5px #000;
     position: relative;
-  }
+}
+
   .project-icon-item:after {
     content: "";
     position: absolute;
@@ -219,7 +219,7 @@
           width: 100vw;
           min-width: 0;
           position: absolute;
-          bottom: -200vh;
+          bottom: -220vh;
           left: 0;
           top: 10%;
           margin-top: 12vh;
@@ -229,7 +229,7 @@
       .project-arrows {
           position:absolute;
           left: 0;
-          top: 55vh;
+          top: 50vh;
           width: 100vw;
       }
 
@@ -257,7 +257,14 @@
       .project-img2 {
           width: 100vw;
           background-repeat: no-repeat;
-          background-size: 120%;
+          background-size: 100%;
+      }
+
+      .project-img1 {
+        background-image: url('../images/netflix-clone.png');
+      }
+      .project-img2 {
+        background-image: url('../images/paola-ramalhete-correct-size.png')
       }
 
       .project-description {
@@ -273,11 +280,12 @@
         column-gap: 1em;
         row-gap: 1em;
         grid-template-columns: repeat(3, 1fr);
+        margin-top: -50px;
       }
 
       .project-info-cellphone {
           position: relative;
-          top: 40vh;
+          top: 35vh;
           margin: 0 20vw;
           text-align: center;
           text-shadow: 0px 0px 10px #02020a;

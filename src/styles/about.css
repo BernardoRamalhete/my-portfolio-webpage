@@ -36,7 +36,7 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 110vh;
+    bottom: 1150px;
     right: 5vw;
     margin-bottom: -550px;
 }
@@ -103,6 +103,11 @@
 }
 
 @media (max-width: 760px) {
+    .menu-holder {
+        position: relative;
+        right: 35vw;
+    }
+
     .about {
         width: 100vw;
         margin: 0;
@@ -145,6 +150,8 @@
     }
 
     .about-contact-info {
+        grid-template-columns: 1fr;
+        row-gap: 1em;
     }
 
     .about-contact-item {

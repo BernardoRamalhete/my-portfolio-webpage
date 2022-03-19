@@ -1,0 +1,61 @@
+.ProjectsBody-white {
+    color: #181818;
+}
+
+.project-title-white {
+    background-image: linear-gradient(90deg, #aa9ad3, #e2adc0);
+}
+
+.project-img1-white,
+.project-img2-white {
+    color: #f9f9f9;
+}
+
+.project-img1-white {
+    background-image: linear-gradient(to top, #1818183b 15%, transparent), url('../images/netflix-clone.png');
+}
+
+.project-img2-white {
+    background-image: linear-gradient(to top, #1818189a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/paola-ramalhete-correct-size.png');
+}
+
+.project-img1-white:hover,
+.project-img2-white:hover {
+    box-shadow: inset 0px -10px 0px #e2adc0;
+    
+}
+
+.project-img1-white:hover {
+    background-image: linear-gradient(to top, #1818189a 80%, transparent), url('../images/netflix-clone.png');
+}
+
+.project-img2-white:hover {
+    background-image: linear-gradient(to top, #181818, transparent), url('../images/paola-ramalhete-correct-size.png');
+    
+}
+
+.left-arrow-white:hover {
+    box-shadow: 2px 2px 30px 0px #d1d9e6, -2px -2px 30px 0px #f9f9f9;
+}
+
+.right-arrow-white:hover {
+    box-shadow: 2px 2px 30px 0px #d1d9e6, -2px -2px 30px 0px #f9f9f9;
+}
+
+.project-icon-item-white {
+    background: #edf2f0;
+    box-shadow: -3px -3px 7px #f9f9f93a, 3px 3px 5px #d1d9e6;
+  }
+
+  .project-icon-item-white:after {
+    box-shadow: inset -3px -3px 7px #f9f9f93a, inset 3px 3px 5px #d1d9e6;
+  }
+
+  @media (max-width: 760px) {
+      .project-img1 {
+        background-image: url('../images/netflix-clone.png');
+      }
+      .project-img2 {
+        background-image: url('../images/paola-ramalhete-correct-size.png')
+      }
+  }

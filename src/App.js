@@ -4,7 +4,6 @@ import ThankYou from './pages/ThankYou'
 import Projects from './pages/Projects'
 import About from './pages/About'
 import './styles/main.css'
-
 function App() {
   return (
     <Router>

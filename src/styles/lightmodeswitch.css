@@ -1,0 +1,111 @@
+.center-switch {
+    display: flex;
+    justify-content: center;
+}
+
+.switch-container {
+    background-color: #edf2f0;
+    border-radius: 16px;
+    padding: 20px;
+    width: 90%;
+    box-shadow: 
+        -9px -9px 20px 0px #f9f9f9, 
+        -4px -4px 5px 0px #f9f9f9, 
+        7px 7px 20px 0px #d1d9e6, 
+        4px 4px 5px 0px #d1d9e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.switch-title {
+    font-size: 20px;
+    font-weight: 100;
+    color: #181818;
+    transition: all 0.8s ease;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    transition: all 0.8s ease;
+  }
+  
+  .switch input {display:none;}
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .switch-input:checked + .slider {
+    background-color: #aa9ad3;
+  }
+  
+  .switch-input:focus + .slider {
+    box-shadow: 0 0 1px #aa9ad3;
+  }
+  
+  .switch-input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+  .switch-container-dark {
+    background-color: #f0386b;
+    box-shadow: 
+      -9px -9px 20px 0px #eb7fa73a, 
+      -4px -4px 5px 0px #eb7fa73a, 
+      7px 7px 20px 0px #b51c545a, 
+      4px 4px 5px 0px #b51c545a, 
+      inset 0px 0px 0px 0px #eb7fa73a, 
+      inset 0px 0px 0px 0px #b51c545a, 
+      inset 0px 0px 0px 0px #b51c545a, 
+      inset 0px 0px 0px 0px #eb7fa73a;
+  }
+
+  .switch-title-dark {
+    color: #EFE9E7;
+    font-weight: 400;
+  }
+
+  .slider-dark {
+    background-color: greenyellow;
+  }
+  
+  .slider-dark:before {
+    background-color: #EFE9E7;
+  }
+
+  .switch-input-dark:checked + .slider-dark {
+    background-color: #8332AC;
+  }
+
+  .switch-input-dark-focus + .slider-dark {
+    box-shadow: 0 0 1px #8332AC;
+  } 

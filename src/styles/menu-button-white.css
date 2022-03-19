@@ -1,0 +1,29 @@
+.menu-white {
+    background-image: linear-gradient(#d1d9e6, #f9f9f9);
+    box-shadow: 
+    -9px -9px 20px 0px #f9f9f9, 
+    -4px -4px 5px 0px #f9f9f9, 
+    7px 7px 20px 0px #d1d9e6,
+    4px 4px 5px 0px #d1d9e6, 
+    inset 0px 0px 0px 0px #f9f9f9, 
+    inset 0px 0px 0px 0px #d1d9e6, 
+    inset 0px 0px 0px 0px #d1d9e6, 
+    inset 0px 0px 0px 0px #ecf0f3;
+}
+
+.menu-detail-white {
+    background-color: #1818184b;
+    box-shadow: 0px 0px 10px 0px #d1d9e6;
+}
+
+.menu-white.active {
+    box-shadow: 
+    0px 0px 0px 0px #f9f9f9, 
+    0px 0px 0px 0px #f9f9f9, 
+    0px 0px 0px 0px #ecf0f3, 
+    0px 0px 0px 0px #ecf0f3, 
+    inset -7px -7px 20px 0px #f9f9f9, 
+    inset -4px -4px 5px 0px #f9f9f9, 
+    inset 7px 7px 20px 0px #d1d9e6, 
+    inset 4px 4px 5px 0px #d1d9e6;
+}
