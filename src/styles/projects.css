@@ -237,7 +237,7 @@
           width: 100vw;
           justify-content: center;
           position: relative;
-          bottom: 30vh
+          bottom: 250px;
       }
 
       .project-title {

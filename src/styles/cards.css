@@ -113,13 +113,14 @@
     }
     
     .card-row{
-        width: 50vw;
-        margin: 0;
-        margin-left: 5vw;
+        width: 100vw;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
         row-gap: 20px;
+        position: relative;
+        left: -3%;
     }
 
     .card-face {
