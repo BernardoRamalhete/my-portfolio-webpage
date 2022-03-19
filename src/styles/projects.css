@@ -219,7 +219,7 @@
           width: 100vw;
           min-width: 0;
           position: absolute;
-          bottom: -220vh;
+          bottom: -1500px;
           left: 0;
           top: 10%;
           margin-top: 12vh;
@@ -229,7 +229,7 @@
       .project-arrows {
           position:absolute;
           left: 0;
-          top: 50vh;
+          top: 330px;
           width: 100vw;
       }
 
@@ -285,7 +285,7 @@
 
       .project-info-cellphone {
           position: relative;
-          top: 35vh;
+          top: 230px;
           margin: 0 20vw;
           text-align: center;
           text-shadow: 0px 0px 10px #02020a;
