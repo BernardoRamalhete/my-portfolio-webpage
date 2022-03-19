@@ -65,7 +65,7 @@ function About() {
                             My name is Bernardo Ramalhete, I'm 25 years old, married, father of two. I started coding back in 2014, when I got into the Universidade do Espírito Santo, in the Computer Science major. I completed half of the course before dropping out due to family problems. Then 2 years later I got back into development, more specifically web applications. Since then I made a goal to code better each day, with more responsive, faster and cleaner code apps as possible!
                         </p>
                     </div>
-                        <div className={darkMode ? 'about-contact':'about -contact about-contact-white'}>
+                        <div className={darkMode ? 'about-contact':'about-contact about-contact-white'}>
                             <h2 className={darkMode? 'about-contact-h2':'about-contact-h2 about-contact-h2-white'}>Wanna get in touch?</h2>
                             <p className='about-contact-p'>Reach out via the contact form in the top menu, or you can just use these:</p>
                             <div className='about-contact-info'>

@@ -36,7 +36,7 @@
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 1150px;
+    bottom: 1400px;
     right: 5vw;
     margin-bottom: -550px;
 }
@@ -64,8 +64,9 @@
         inset 0px 0px 0px 0px #b51c545a, 
         inset 0px 0px 0px 0px #eb7fa73a;
     margin: 0 auto;
+    margin-top: 500px;
     position: relative;
-    bottom: 17vh;
+    bottom: 0vh;
     z-index: 5;
 }
 
