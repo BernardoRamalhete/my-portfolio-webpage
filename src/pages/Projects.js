@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react'
 import '../styles/projects.css'
 import '../styles/projects-white.css'
 
-function Projects() {
+function Projects({darkMode, setDarkMode}) {
     const [menuControl, setMenuControl] = useState(false)
     const [contactControl, setContactControl] = useState(false)
     const [imgHovered, setImgHovered] = useState(false)
@@ -60,6 +60,10 @@ function Projects() {
         }
     ]
 
+    const openProject = (link) => {
+        window.open(link)
+    }
+
     const handleRightArrow = () => {
         if(projectDisplay + 1 <= projects.length - 1) {
             setProjectDisplay((prevState) => prevState + 1)
@@ -98,20 +102,18 @@ function Projects() {
 
     window.addEventListener('resize', handleResize)
 
-    const [darkMode, setDarkMode] = useState(false)
-
     useEffect(()=>{
         if(!darkMode) {
-          document.body.classList.add('white')
           setIconColor('#F0386B9a')
           setArrowColor('#F0386B9a')
           
         } else {
-          document.body.classList.remove('white')
           setIconColor('#F0386b')
         setArrowColor('#EFE9E7')
         }
       },[darkMode])
+
+      
 
     return (
         <>
@@ -147,19 +149,26 @@ function Projects() {
                         <h1 className={darkMode?'project-title':'project-title project-title-white'}>
                             {projects[projectDisplay].name}
                         </h1>
-                        <div className='project-body'>
-                            <a className={projects[projectDisplay].picture} target='blank_' href={projects[projectDisplay].link} onMouseEnter={() => setImgHovered(true)} onMouseLeave={() => setImgHovered(false)}>
-                                <div className={cellPhone ?'project-info-cellphone' : 'project-info'}>
+
+                        
+
+                        <div className='project-body' >
+                            <div className='project-hover' onMouseEnter={() => setImgHovered(true)} onMouseLeave={() => setImgHovered(false)} onClick={() => openProject(projects[projectDisplay].link)}>   
+                            </div>
+                            <a className={projects[projectDisplay].picture} target='blank_' href={projects[projectDisplay].link} >
+                                <div className={
+                                    cellPhone ?'project-info-cellphone' : 
+                                    imgHovered ? 'project-info project-info-hovered' : 'project-info'}>
                                     <h2 className='project-info-title'>{projects[projectDisplay].name}</h2>
                                     <p className='project-info-tech'>{projects[projectDisplay].infoTechs}</p>
                                     <p className='project-info-live'>click to access the live web app</p>
                                 </div>
                             </a>
-
+                        
 
                         </div>
 
-                        <div className={imgHovered ? 'project-icons project-icons-hovered' : 'project-icons'}>
+                        <div className={imgHovered ? 'project-icons-hovered' : 'project-icons'}>
 
                             {
                                 projects[projectDisplay].icons.map((icon, key) => {
@@ -174,10 +183,12 @@ function Projects() {
                         <p className={darkMode? 'project-description' : 'project-description project-description-white'}>
                             {projects[projectDisplay].description}
                         </p>
+                       
                         <a className='project-github' href={projects[projectDisplay].repository} target='_blank'>
                             {gitHubIcon}
                         </a>
                             <p className={darkMode? 'github-sub' : 'github-sub-white'}>Access the project repository</p>
+                        
 
                     </section>
 

@@ -9,7 +9,8 @@ import '../styles/homepage.css'
 import '../styles/homepagewhite.css'
 import '../styles/mainWhite.css'
 
-function HomePage() {
+function HomePage({darkMode, setDarkMode}) {
+  console.log(`Homepage darkmode: ${darkMode}`)
 
   const [menuControl, setMenuControl] = useState(false)
   const [contactControl, setContactControl] = useState(false)
@@ -33,8 +34,6 @@ function HomePage() {
     }, [pageWidth])
 
     window.addEventListener('resize', handleResize)
-
-    const [darkMode, setDarkMode] = useState(false)
     const [blured, setBlured] = useState(false)
 
     useEffect(()=>{

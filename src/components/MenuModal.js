@@ -13,6 +13,12 @@ function MenuModal({ menuControl, setMenuControl, contactControl, setContactCont
     }
 
     useEffect(() => {
+        if(darkMode) {
+            setSwitchValue(true)
+        }
+    }, [darkMode])
+
+    useEffect(() => {
         setDarkMode(switchValue)
     }, [switchValue])
 
@@ -22,7 +28,7 @@ function MenuModal({ menuControl, setMenuControl, contactControl, setContactCont
         <>
 
             <div className=
-                {menuControl && !contactControl ? 'modal-overlay modal-open' : 'modal-container'} onClick={() => setMenuControl((prevState) => !prevState)}>
+                {menuControl && !contactControl ? 'modal-overlay modal-open' : 'modal-overlay'} onClick={() => setMenuControl((prevState) => !prevState)}>
             </div>
 
             <div className={

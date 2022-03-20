@@ -51,6 +51,14 @@
     min-width: 800px;
 }
 
+.project-hover {
+    position: absolute;
+    margin-top: 50px;
+    width: 800px;
+    height: 500px;
+    z-index: 1999;
+    cursor: pointer;
+}
 
 .project-img1,
 .project-img2 {
@@ -76,37 +84,39 @@
     background-size: 160%;
 }
 
-.project-img1:hover,
-.project-img2:hover {
+.project-hover:hover + .project-img1 {
     box-shadow: inset 0px -10px 0px #d73e7e; 
     background-size: 180%;
     
 }
 
-.project-img1:hover {
+.project-hover:hover + .project-img2 {
+    box-shadow: inset 0px -10px 0px #d73e7e; 
+    background-size: 180%;
+    
+}
+
+.project-hover:hover + .project-img1 {
     background-image: linear-gradient(to top, #02020a7a 80%, transparent), url('../images/netflix-clone.png');
 }
 
-.project-img2:hover {
-    background-image: linear-gradient(to top, #02020a, transparent), url('../images/paola-ramalhete-correct-size.png');
-    
+.project-hover:hover + .project-img2-white {
+    background-image: linear-gradient(to top, #02020a9a 50%, transparent), url('../images/paola-ramalhete-correct-size.png');
 }
 
 .project-info {
     position: relative;
     top: 530px;
     left: 50px;
+    display:none;
     opacity: 0;
     transition: all 0.5s ease;
 }
 
-.project-img1:hover .project-info {
+.project-info-hovered {
+    transition: all 5s ease;
     top: 380px;
-    opacity: 1;
-}
-
-.project-img2:hover .project-info {
-    top: 380px;
+    display:block;
     opacity: 1;
 }
 
@@ -158,6 +168,11 @@
 }
 
 .project-icons-hovered {
+    position: relative;
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    transition: all 0.5s ease;
     top: -540px;
 } 
 
@@ -199,7 +214,7 @@
   .project-github {
       width: 80px;
       height: 80px;
-      margin-top: 100px;
+      margin-top: 200px;
   }
 
   .github-sub {

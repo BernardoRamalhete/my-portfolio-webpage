@@ -8,7 +8,7 @@ import '../styles/about-white.css'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import EmailIcon from '@mui/icons-material/Email';
 
-function About() {
+function About({darkMode, setDarkMode}) {
 
     const [menuControl, setMenuControl] = useState(false)
     const [contactControl, setContactControl] = useState(false)
@@ -31,8 +31,6 @@ function About() {
     window.addEventListener('resize', handleResize)
 
     const [iconColor, setIconColor] = useState('#efe9e7')
-
-    const [darkMode, setDarkMode] = useState(false)
 
     useEffect(()=>{
         if(!darkMode) {
