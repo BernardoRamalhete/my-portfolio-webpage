@@ -68,7 +68,7 @@ function Projects({darkMode, setDarkMode}) {
         if(projectDisplay + 1 <= projects.length - 1) {
             setProjectDisplay((prevState) => prevState + 1)
         } else {
-            setProjectDisplay(projects.length - 1)
+            setProjectDisplay(0)
         }
 
     }
@@ -77,7 +77,7 @@ function Projects({darkMode, setDarkMode}) {
         if(projectDisplay - 1 >= 0) {
             setProjectDisplay((prevState) => prevState - 1)
         } else {
-            setProjectDisplay(0)
+            setProjectDisplay(1)
         }
     }
 
