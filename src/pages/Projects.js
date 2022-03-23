@@ -120,7 +120,7 @@ function Projects({darkMode, setDarkMode}) {
 
                 <Menu darkMode={darkMode} menuControl={menuControl} setMenuControl={setMenuControl} />
 
-            <MenuModal setDarkMode={setDarkMode} darkMode={darkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl} />
+            <MenuModal thisPage={'Projects'} setDarkMode={setDarkMode} darkMode={darkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl} />
 
             <Contact darkMode={darkMode} contactControl={contactControl} setContactControl={setContactControl} />
             <div className={
@@ -134,7 +134,7 @@ function Projects({darkMode, setDarkMode}) {
                     <h1>&lt;projects&gt;</h1>
                 </div>
 
-                <div className='project-arrows'>
+                <div className='project-arrows' style={cellPhone ? {zIndex: 1000000} : {}}>
 
                     <div className={darkMode?'left-arrow':'left-arrow left-arrow-white'} onClick={handleLeftArrow}><ArrowRightIcon sx={{ transform: 'rotate(180deg)', fontSize: iconSize, color: arrowColor }} /></div>
                     <div className={darkMode?'right-arrow':'right-arrow right-arrow-white'} onClick={handleRightArrow}><ArrowRightIcon sx={{ fontSize: iconSize, color: arrowColor }} /></div>
@@ -155,7 +155,7 @@ function Projects({darkMode, setDarkMode}) {
                         <div className='project-body' >
                             <div className='project-hover' onMouseEnter={() => setImgHovered(true)} onMouseLeave={() => setImgHovered(false)} onClick={() => openProject(projects[projectDisplay].link)}>   
                             </div>
-                            <a className={projects[projectDisplay].picture} target='blank_' href={projects[projectDisplay].link} >
+                            <a className={projects[projectDisplay].picture} target='blank_' rel='noreferrer' href={projects[projectDisplay].link} >
                                 <div className={
                                     cellPhone ?'project-info-cellphone' : 
                                     imgHovered ? 'project-info project-info-hovered' : 'project-info'}>
@@ -168,7 +168,7 @@ function Projects({darkMode, setDarkMode}) {
 
                         </div>
 
-                        <div className={imgHovered ? 'project-icons-hovered' : 'project-icons'}>
+                        <div className={imgHovered && !cellPhone ? 'project-icons-hovered' : 'project-icons'}>
 
                             {
                                 projects[projectDisplay].icons.map((icon, key) => {
@@ -184,7 +184,7 @@ function Projects({darkMode, setDarkMode}) {
                             {projects[projectDisplay].description}
                         </p>
                        
-                        <a className='project-github' href={projects[projectDisplay].repository} target='_blank'>
+                        <a className='project-github' href={projects[projectDisplay].repository} target='_blank' rel='noreferrer'>
                             {gitHubIcon}
                         </a>
                             <p className={darkMode? 'github-sub' : 'github-sub-white'}>Access the project repository</p>

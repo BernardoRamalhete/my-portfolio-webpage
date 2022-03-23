@@ -27,7 +27,7 @@
     box-shadow: 
     -8px -8px 32px #0e0e48,
     8px 8px 32px #1b1b88;
-    height: 900px;
+    height: 800px;
 }
 
 .modal-open {
@@ -100,7 +100,7 @@
 
     .menu-modal {
         width: 100vw;
-        height: 160%;
+        height: 140%;
         position: absolute;
         top: 5%;
         left: 0;

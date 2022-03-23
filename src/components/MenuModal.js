@@ -5,7 +5,7 @@ import '../styles/menu-modal.css'
 import '../styles/menu-modal-white.css'
 import LightModeSwitch from '../components/LightModeSwitch'
 
-function MenuModal({ menuControl, setMenuControl, contactControl, setContactControl, cellPhone, darkMode, setDarkMode }) {
+function MenuModal({ menuControl, setMenuControl, contactControl, setContactControl, cellPhone, darkMode, setDarkMode, thisPage }) {
 
     const [switchValue, setSwitchValue] = useState(false)
     const handleSwitch = () => {
@@ -20,7 +20,7 @@ function MenuModal({ menuControl, setMenuControl, contactControl, setContactCont
 
     useEffect(() => {
         setDarkMode(switchValue)
-    }, [switchValue])
+    }, [switchValue, setDarkMode])
 
 
 
@@ -41,17 +41,17 @@ function MenuModal({ menuControl, setMenuControl, contactControl, setContactCont
                     <h2 className={darkMode ?"menu-modal-title-item" :'menu-modal-title-item menu-modal-title-item-white'}>you wanna go?</h2>
                 </span>
                 <div className='menu-modal-options'>
-                    <Link to='/' className='link-to'>
+                    {thisPage !== 'HomePage' && <Link to='/' className='link-to'>
                         <h3 className={darkMode ? 'menu-modal-option' : 'menu-modal-option menu-modal-option-white'}>Home page</h3>
-                    </Link>
+                    </Link>}
 
-                    <Link to='/projects' className='link-to'>
+                    {thisPage !== 'Projects' && <Link to='/projects' className='link-to'>
                         <h3 className={darkMode ? 'menu-modal-option' : 'menu-modal-option menu-modal-option-white'}>My projects</h3>
-                    </Link>
+                    </Link>}
 
-                    <Link to='/about' className='link-to'>
+                    {thisPage !== 'About' && <Link to='/about' className='link-to'>
                         <h3 className={darkMode ? 'menu-modal-option' : 'menu-modal-option menu-modal-option-white'}>About me</h3>
-                    </Link>
+                    </Link>}
 
 
                     <h3 className={darkMode ? 'menu-modal-option' : 'menu-modal-option menu-modal-option-white'} onClick={() => { setContactControl(true); setMenuControl(false) }}>Contact me</h3>

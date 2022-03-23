@@ -45,7 +45,7 @@ function About({darkMode, setDarkMode}) {
     return (
         <>
             <Menu darkMode={darkMode} menuControl={menuControl} setMenuControl={setMenuControl} />
-            <MenuModal setDarkMode={setDarkMode} darkMode={darkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl} />
+            <MenuModal thisPage={'About'} setDarkMode={setDarkMode} darkMode={darkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl} />
 
             <Contact darkMode={darkMode} contactControl={contactControl} setContactControl={setContactControl} />
             <div className={menuControl || contactControl ? "AboutBody blured" : 'AboutBody'}>

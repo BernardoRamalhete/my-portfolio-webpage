@@ -319,5 +319,25 @@
           font-size: 16px;
           width: 150px;
       }
+
+      .project-hover:hover + .project-img1 {
+        background-image: url('../images/netflix-clone.png');
+        }
+    
+        .project-hover:hover + .project-img2-white {
+            background-image: url('../images/paola-ramalhete-correct-size.png');
+        }
+
+        .project-hover:hover + .project-img1 {
+            box-shadow: none; 
+            background-size: 100%;
+            
+        }
+        
+        .project-hover:hover + .project-img2 {
+            box-shadow: none; 
+            background-size: 160%;
+            
+        }
   }
   

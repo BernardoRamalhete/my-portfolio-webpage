@@ -10,7 +10,6 @@ import '../styles/homepagewhite.css'
 import '../styles/mainWhite.css'
 
 function HomePage({darkMode, setDarkMode}) {
-  console.log(`Homepage darkmode: ${darkMode}`)
 
   const [menuControl, setMenuControl] = useState(false)
   const [contactControl, setContactControl] = useState(false)
@@ -56,7 +55,7 @@ function HomePage({darkMode, setDarkMode}) {
     <>
       <Menu darkMode={darkMode} menuControl={menuControl} setMenuControl={setMenuControl} />
 
-      <MenuModal darkMode={darkMode} setDarkMode={setDarkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
+      <MenuModal thisPage={'HomePage'} darkMode={darkMode} setDarkMode={setDarkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
 
       <Contact darkMode={darkMode} contactControl={contactControl} setContactControl={setContactControl}/>
 
@@ -84,10 +83,10 @@ function HomePage({darkMode, setDarkMode}) {
 
         </section>
 
-        <Cards darkMode={darkMode} cellPhone={cellPhone}/>
 
       </div>
 
+        <Cards darkMode={darkMode} cellPhone={cellPhone}/>
     </>
   )
 }
