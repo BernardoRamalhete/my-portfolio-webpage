@@ -61,7 +61,8 @@
 }
 
 .project-img1,
-.project-img2 {
+.project-img2,
+.project-img3 {
     background-position: center;
     background: cover;
     background-size: 160%;
@@ -72,7 +73,8 @@
     transition: all 0.5s ease;
     text-decoration: none;
     color: #EFE9E7;
-    margin-top: 50px; 
+    margin-top: 50px;
+    transition: all 0.5s ease; 
 }
 
 .project-img1 {
@@ -81,7 +83,12 @@
 
 .project-img2 {
     background-image: linear-gradient(to top, #02020a9a 25%, transparent), linear-gradient(to bottom, #02020a3a 25%, transparent), url('../images/paola-ramalhete-correct-size.png');
-    background-size: 160%;
+    background-size: 120%;
+}
+
+.project-img3 {
+    background-image: linear-gradient(to top, #02020a9a 25%, transparent), linear-gradient(to bottom, #02020a3a 25%, transparent), url('../images/chat-app.png');
+    background-size: 120%;
 }
 
 .project-hover:hover + .project-img1 {
@@ -92,7 +99,13 @@
 
 .project-hover:hover + .project-img2 {
     box-shadow: inset 0px -10px 0px #d73e7e; 
-    background-size: 180%;
+    background-size: 140%;
+    
+}
+
+.project-hover:hover + .project-img3 {
+    box-shadow: inset 0px -10px 0px #d73e7e; 
+    background-size: 140%;
     
 }
 
@@ -102,6 +115,10 @@
 
 .project-hover:hover + .project-img2-white {
     background-image: linear-gradient(to top, #02020a9a 50%, transparent), url('../images/paola-ramalhete-correct-size.png');
+}
+
+.project-hover:hover + .project-img3-white {
+    background-image: linear-gradient(to top, #02020a9a 50%, transparent), url('../images/chat-app.png');
 }
 
 .project-info {
@@ -271,10 +288,12 @@
       }
 
       .project-img1,
-      .project-img2 {
+      .project-img2,
+      .project-img3 {
           width: 100vw;
           background-repeat: no-repeat;
           background-size: 100%;
+          transition: all 0.5s ease;
       }
 
       .project-img1 {
@@ -282,6 +301,9 @@
       }
       .project-img2 {
         background-image: url('../images/paola-ramalhete-correct-size.png')
+      }
+      .project-img3 {
+        background-image: url('../images/chat-app.png')
       }
 
       .project-description {
@@ -327,6 +349,10 @@
         .project-hover:hover + .project-img2-white {
             background-image: url('../images/paola-ramalhete-correct-size.png');
         }
+       
+        .project-hover:hover + .project-img3-white {
+            background-image: url('../images/chat-app.png');
+        }
 
         .project-hover:hover + .project-img1 {
             box-shadow: none; 
@@ -335,6 +361,12 @@
         }
         
         .project-hover:hover + .project-img2 {
+            box-shadow: none; 
+            background-size: 160%;
+            
+        }
+        
+        .project-hover:hover + .project-img3 {
             box-shadow: none; 
             background-size: 160%;
             

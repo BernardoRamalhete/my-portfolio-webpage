@@ -7,8 +7,10 @@
 }
 
 .project-img1-white,
-.project-img2-white {
+.project-img2-white,
+.project-img3-white {
     color: #f9f9f9;
+    transition: all 0.5s ease;
 }
 
 .project-img1-white {
@@ -19,8 +21,14 @@
     background-image: linear-gradient(to top, #1818189a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/paola-ramalhete-correct-size.png');
 }
 
+.project-img3-white {
+    background-image: linear-gradient(to top, #1818189a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/chat-app.png');
+    background-size: cover
+}
+
 .project-img1-white:hover,
-.project-img2-white:hover {
+.project-img2-white:hover,
+.project-img3-white:hover {
     box-shadow: inset 0px -10px 0px #e2adc0;
     
 }
@@ -31,6 +39,11 @@
 
 .project-img2-white:hover {
     background-image: linear-gradient(to top, #181818, transparent), url('../images/paola-ramalhete-correct-size.png');
+    
+}
+
+.project-img3-white:hover {
+    background-image: linear-gradient(to top, #181818, transparent), url('../images/chat-app.png');
     
 }
 
@@ -66,5 +79,8 @@
       }
       .project-img2 {
         background-image: url('../images/paola-ramalhete-correct-size.png')
+      }
+      .project-img3 {
+        background-image: url('../images/chat-app.png')
       }
   }

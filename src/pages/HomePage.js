@@ -79,7 +79,12 @@ function HomePage({darkMode, setDarkMode}) {
             <h4 className='greeting-bottom'>Fullstack developer</h4>
           </div>
 
-          <button className={darkMode ? 'btn-cv' : 'btn-cv btn-cv-white'}><span className='btn-in'>Download CV</span><GetAppIcon sx={{ color: '#EFE9E7', fontSize: '40px' }} /></button>
+          <div>
+            <a href='https://drive.google.com/file/d/1V0VFKB5gEE0DFmwC4Nk3fjP2Css90L92/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
+            <button className={darkMode ? 'btn-cv' : 'btn-cv btn-cv-white'}><span className='btn-in'>Download CV</span><GetAppIcon sx={{ color: '#EFE9E7', fontSize: '40px' }} /></button>
+            </a>
+            <a href='https://github.com/BernardoRamalhete' className={darkMode ? 'github-link' : 'github-link github-link-white'} target='_blank' rel='noopener noreferrer' >Access my GitHub profile</a>
+          </div>
 
         </section>
 
