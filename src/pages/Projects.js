@@ -47,6 +47,15 @@ function Projects({darkMode, setDarkMode}) {
 
     const projects = [
         {
+            name: 'Ecommerce Web App',
+            picture: 'project-img4 project-img4-white',
+            link: 'https://bernardo-ramalhete-ecommerce.herokuapp.com/',
+            repository: 'https://github.com/BernardoRamalhete/Ecommerce-App',
+            description: "This project is a second-hand furniture marketplace. In this webapp the user can make an account and start placing products in the store, setting a image, name, description, price and placing tags to make easier to find it. The project uses the famous MERN Stack (mongoDB, Express, React and Node.JS).",
+            infoTechs: 'Backend/frontend',
+            icons: [reactIcon, mongoIcon, javaScriptIcon, htmlIcon, cssIcon]
+        },
+        {
             name: 'Netflix Clone',
             picture: "project-img1 project-img1-white",
             link: 'https://bernardo-netflix-clone.herokuapp.com/',

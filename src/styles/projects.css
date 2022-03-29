@@ -1,7 +1,7 @@
 .ProjectsBody {
     font-family: 'Manrope', sans-serif;
     position: relative;
-    top: -130px;
+    top: -120px;
     margin-left: 50px;
     margin-bottom: -200px;
 }
@@ -22,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 300px;
+    top: 450px;
     right: 20px;
     z-index: 5;
 }
@@ -37,6 +37,7 @@
 }
 
 .project-title {
+    margin-top: 50px;
     font-size: 70px;
     background-image: linear-gradient(90deg, #e03c78, #7758c6);
     background-clip: text; 
@@ -62,7 +63,8 @@
 
 .project-img1,
 .project-img2,
-.project-img3 {
+.project-img3,
+.project-img4 {
     background-position: center;
     background: cover;
     background-size: 160%;
@@ -91,6 +93,11 @@
     background-size: 120%;
 }
 
+.project-img4 {
+    background-image: linear-gradient(to top, #02020a9a 25%, transparent), url('../images/ecommerce-webapp.png');
+    background-size: 120%
+}
+
 .project-hover:hover + .project-img1 {
     box-shadow: inset 0px -10px 0px #d73e7e; 
     background-size: 180%;
@@ -109,6 +116,12 @@
     
 }
 
+.project-hover:hover + .project-img4 {
+    box-shadow: inset 0px -10px 0px #d73e7e; 
+    background-size: 140%;
+    
+}
+
 .project-hover:hover + .project-img1 {
     background-image: linear-gradient(to top, #02020a7a 80%, transparent), url('../images/netflix-clone.png');
 }
@@ -119,6 +132,10 @@
 
 .project-hover:hover + .project-img3-white {
     background-image: linear-gradient(to top, #02020a9a 50%, transparent), url('../images/chat-app.png');
+}
+
+.project-hover:hover + .project-img4-white {
+    background-image: linear-gradient(to top, #02020a9a 50%, transparent),  url('../images/ecommerce-webapp.png');
 }
 
 .project-info {
@@ -275,11 +292,12 @@
       }
 
       .project-title {
-        font-size: 40px;
+        font-size: 30px;
         position: relative;
-        top: 4em;
-        margin-bottom: 1em;
+        top: 5em;
+        margin-bottom: 0;
         white-space: nowrap;
+        margin-top: 100px;
       }
 
       .project-body {
@@ -289,8 +307,10 @@
 
       .project-img1,
       .project-img2,
-      .project-img3 {
+      .project-img3,
+      .project-img4 {
           width: 100vw;
+          height: 80vh;
           background-repeat: no-repeat;
           background-size: 100%;
           transition: all 0.5s ease;
@@ -304,6 +324,10 @@
       }
       .project-img3 {
         background-image: url('../images/chat-app.png')
+      }
+      
+      .project-img4 {
+        background-image: url('../images/ecommerce-no-title.png')
       }
 
       .project-description {
@@ -353,6 +377,10 @@
         .project-hover:hover + .project-img3-white {
             background-image: url('../images/chat-app.png');
         }
+        
+        .project-hover:hover + .project-img4-white {
+            background-image: url('../images/ecommerce-no-title.png');
+        }
 
         .project-hover:hover + .project-img1 {
             box-shadow: none; 
@@ -367,6 +395,12 @@
         }
         
         .project-hover:hover + .project-img3 {
+            box-shadow: none; 
+            background-size: 160%;
+            
+        }
+        
+        .project-hover:hover + .project-img4 {
             box-shadow: none; 
             background-size: 160%;
             
