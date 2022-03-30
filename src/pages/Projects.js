@@ -48,7 +48,7 @@ function Projects({darkMode, setDarkMode}) {
     const projects = [
         {
             name: 'Ecommerce Web App',
-            picture: 'project-img4 project-img4-white',
+            picture: '4',
             link: 'https://bernardo-ramalhete-ecommerce.herokuapp.com/',
             repository: 'https://github.com/BernardoRamalhete/Ecommerce-App',
             description: "This project is a second-hand furniture marketplace. In this webapp the user can make an account and start placing products in the store, setting a image, name, description, price and placing tags to make easier to find it. The project uses the famous MERN Stack (mongoDB, Express, React and Node.JS).",
@@ -57,7 +57,7 @@ function Projects({darkMode, setDarkMode}) {
         },
         {
             name: 'Netflix Clone',
-            picture: "project-img1 project-img1-white",
+            picture: "1",
             link: 'https://bernardo-netflix-clone.herokuapp.com/',
             repository: 'https://github.com/BernardoRamalhete/netflixclone',
             description: "A netflix clone web application that has full CRUD functionality using a mongoDB to save user's accounts and their profiles. In the app the user can create multiple profiles, delete then or edit, chaging the profile's name and photo. And when it comes to the netflix browse page, it's created using the TMDB API to dynamically provide the movie list and choose the featured movie.",
@@ -66,7 +66,7 @@ function Projects({darkMode, setDarkMode}) {
         },
         {
             name: 'Paola Ramalhete',
-            picture: "project-img2 project-img2-white",
+            picture: "2",
             link: 'https://paola-ramalhete.web.app/',
             repository: 'https://github.com/BernardoRamalhete/site-paola-ramalhete',
             description: "Personal single page website made to a brazilian personal stylist. This site was made using react to make the content flow easier and faster, this with a minimalist design and the use of custom fonts make a clean and reactive website. The code is entirelly controled by react hooks, not utilising react-router to go from page to page. This way  the content is dynamically loaded as the user select between the options in the top menu.",
@@ -75,7 +75,7 @@ function Projects({darkMode, setDarkMode}) {
         },
         {
             name: 'Chat App',
-            picture: 'project-img3 project-img3-white',
+            picture: '3',
             link: 'https://chat-app-sigma-one.vercel.app/',
             repository: 'https://github.com/BernardoRamalhete/chat-app',
             description: "A instant message chat app, made as a final project for Harvard's CS50 course. This project uses Firebase as a backend database and Google Authorization for authentication, besides it's made using the Next JS framework, unlocking the server side render tool and making the development proccess easier, faster and more manageable.",
@@ -179,7 +179,7 @@ function Projects({darkMode, setDarkMode}) {
                         <div className='project-body' >
                             <div className='project-hover' onMouseEnter={() => setImgHovered(true)} onMouseLeave={() => setImgHovered(false)} onClick={() => openProject(projects[projectDisplay].link)}>   
                             </div>
-                            <a className={projects[projectDisplay].picture} target='blank_' rel='noreferrer' href={projects[projectDisplay].link} >
+                            <a className={darkMode ? `project-img${projects[projectDisplay].picture}` : `project-img${projects[projectDisplay].picture} project-img${projects[projectDisplay].picture}-white`} target='blank_' rel='noreferrer' href={projects[projectDisplay].link} >
                                 <div className={
                                     cellPhone ?'project-info-cellphone' : 
                                     imgHovered ? 'project-info project-info-hovered' : 'project-info'}>

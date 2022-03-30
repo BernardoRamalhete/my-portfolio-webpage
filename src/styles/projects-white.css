@@ -15,20 +15,21 @@
 }
 
 .project-img1-white {
-    background-image: linear-gradient(to top, #1818183b 15%, transparent), url('../images/netflix-clone.png');
+    background-image: linear-gradient(to top, #1818181a 15%, transparent), url('../images/netflix-clone.png');
 }
 
 .project-img2-white {
-    background-image: linear-gradient(to top, #1818189a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/paola-ramalhete-correct-size.png');
+    background-image: linear-gradient(to top, #1818182a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/paola-ramalhete-correct-size.png');
 }
 
 .project-img3-white {
-    background-image: linear-gradient(to top, #1818189a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/chat-app.png');
+    background-image: linear-gradient(to top, #1818182a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/chat-app.png');
     background-size: cover
 }
 
 .project-img4-white {
-    background-image: linear-gradient(to top, #1818189a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/ecommerce-webapp.png');
+    background-image: linear-gradient(to top, #1818181a 25%, transparent), linear-gradient(to bottom, #1818183a 25%, transparent), url('../images/ecommerce-webapp.png');
+    opacity: 0.8;
 }
 
 .project-img1-white:hover,

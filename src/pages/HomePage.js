@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react'
 import '../styles/homepage.css'
 import '../styles/homepagewhite.css'
 import '../styles/mainWhite.css'
+import SelectCV from '../components/SelectCV';
 
 function HomePage({darkMode, setDarkMode}) {
 
@@ -16,6 +17,7 @@ function HomePage({darkMode, setDarkMode}) {
 
   const [cellPhone, setCellPhone] = useState(false)
   const [pageWidth, setPageWidth] =useState(window.innerWidth)
+  const [cvOpen, setCvOpen] = useState(false)
 
     const handleResize = () => {
         setPageWidth(window.innerWidth)
@@ -44,12 +46,14 @@ function HomePage({darkMode, setDarkMode}) {
     },[darkMode])
 
     useEffect(()=>{
-      if(menuControl || contactControl) {
+      if(menuControl || contactControl || cvOpen) {
         setBlured(true)
       } else {
         setBlured(false)
       }
-    },[menuControl, contactControl])
+    },[menuControl, contactControl, cvOpen])
+
+    useEffect(()=> {console.log(cvOpen)},[cvOpen])
 
   return (
     <>
@@ -58,6 +62,8 @@ function HomePage({darkMode, setDarkMode}) {
       <MenuModal thisPage={'HomePage'} darkMode={darkMode} setDarkMode={setDarkMode} cellPhone={cellPhone} menuControl={menuControl} setMenuControl={setMenuControl} contactControl={contactControl} setContactControl={setContactControl}/>
 
       <Contact darkMode={darkMode} contactControl={contactControl} setContactControl={setContactControl}/>
+
+      <SelectCV darkMode={darkMode} setCvOpen={setCvOpen} cvOpen={cvOpen}/>
 
       <div className={
       blured && !darkMode ? "HomePageBody HomePageBodyWhite blured" : 
@@ -80,9 +86,15 @@ function HomePage({darkMode, setDarkMode}) {
           </div>
 
           <div>
-            <a href='https://drive.google.com/file/d/1V0VFKB5gEE0DFmwC4Nk3fjP2Css90L92/view?usp=sharing' target='_blank' rel='noopener noreferrer'>
-            <button className={darkMode ? 'btn-cv' : 'btn-cv btn-cv-white'}><span className='btn-in'>Download CV</span><GetAppIcon sx={{ color: '#EFE9E7', fontSize: '40px' }} /></button>
-            </a>
+            
+            <button 
+            className={darkMode ? 'btn-cv' : 'btn-cv btn-cv-white'}
+            onClick={() => {setCvOpen(true)}}>
+              <span className='btn-in'>
+                Download CV
+              </span>
+                <GetAppIcon sx={{ color: '#EFE9E7', fontSize: '40px' }} />
+            </button>
             <a href='https://github.com/BernardoRamalhete' className={darkMode ? 'github-link' : 'github-link github-link-white'} target='_blank' rel='noopener noreferrer' >Access my GitHub profile</a>
           </div>
 
@@ -91,7 +103,7 @@ function HomePage({darkMode, setDarkMode}) {
 
       </div>
 
-        <Cards darkMode={darkMode} cellPhone={cellPhone}/>
+        <Cards darkMode={darkMode} cellPhone={cellPhone} blured={blured}/>
     </>
   )
 }

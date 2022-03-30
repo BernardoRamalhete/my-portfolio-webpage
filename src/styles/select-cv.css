@@ -1,0 +1,96 @@
+.cv-overlay {
+    width: 100vw;
+    height: 170%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+}
+
+.cv-container {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    padding: 30px;
+    background-image: linear-gradient(#02020a, #0d0d40);
+    font-family: 'Raleway', sans-serif;
+    color: #EFE9E7;
+    border-radius: 16px;
+    z-index: 999999999;
+    box-shadow: 
+    -8px -8px 32px #0e0e48,
+    8px 8px 32px #1b1b88;
+    text-align: center;
+}
+
+.cv-container button {
+    font-size: 20px;
+    padding: 20px;
+    border: 2px solid #f0386b;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #f0386b;
+    box-shadow: 
+        -9px -9px 20px 0px #eb7fa73a, 
+        -4px -4px 5px 0px #eb7fa73a, 
+        7px 7px 20px 0px #b51c545a, 
+        4px 4px 5px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #b51c545a, 
+        inset 0px 0px 0px 0px #eb7fa73a;
+    transition: all ease 0.8s;
+    margin-left: 45px;
+    color: #EFE9E7;
+    font-weight: bold;
+}
+
+.cv-container button:hover {
+    background-color: transparent;
+    border: 2px solid #EFE9E7;
+    color: #efe9e7;
+    box-shadow: 
+        4px 4px 20px #02020a inset,
+        -8px -8px 20px #0e0e48 inset
+}
+
+.cv-buttons {
+    width: 100%;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.container-white {
+    background-image: none;
+    background-color: #EDF2F0;
+    box-shadow: 
+        -8px -8px 32px #d1d9e6,
+        8px 8px 32px #f9f9f9;
+    color: #1818189a;
+}
+
+.container-white button:hover {
+    color: #1818187a;
+    background-color: transparent;
+    border: 2px solid transparent;
+    box-shadow: 
+        4px 4px 20px #d1d9e6 inset,
+        -8px -8px 20px #f9f9f9 inset
+}
+
+@media (max-width: 760px) {
+    .cv-container {
+        width: 100vw;
+        left: 0;
+    }
+
+    .cv-container button {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .cv-buttons {
+        margin-bottom: -20px;
+    }
+}

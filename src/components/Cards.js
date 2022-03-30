@@ -2,7 +2,7 @@ import { useState} from 'react'
 import '../styles/cards.css'
 import '../styles/cardswhite.css'
 
-function Cards({ cellPhone, darkMode}) {
+function Cards({ cellPhone, darkMode, blured}) {
   const [iconColors] = useState({color1:'#f0386b',color2:'#f9f9f95a'})
   const [reactIconColor, setReactIconColor] = useState(iconColors.color1)
   const [mongoIconColor, setMongoIconColor] = useState(iconColors.color1)
@@ -105,10 +105,9 @@ function Cards({ cellPhone, darkMode}) {
     },
     
   ]
-  console.log(cellPhone)
 
   return (
-    <section className="cards-section">
+    <section className={blured ? "cards-section blured" : 'cards-section'}>
 
       <h2 className={darkMode ? 'section-title section-title-white techs' : 'section-title techs'}>&lt;techs&gt;</h2>
     
