@@ -51,7 +51,7 @@ function Projects({darkMode, setDarkMode}) {
             picture: '4',
             link: 'https://bernardo-ramalhete-ecommerce.herokuapp.com/',
             repository: 'https://github.com/BernardoRamalhete/Ecommerce-App',
-            description: "This project is a second-hand furniture marketplace. In this webapp the user can make an account and start placing products in the store, setting a image, name, description, price and placing tags to make easier to find it. The project uses the famous MERN Stack (mongoDB, Express, React and Node.JS).",
+            description: "This project is a second-hand furniture marketplace. In this webapp the user can make an account and start placing products in the store, setting a image, name, description, price and placing tags to make easier to find it. It also has comments: users can levar comments in each other products. This project was build using the MERN Stack (mongoDB, Express, React and Node.JS).",
             infoTechs: 'Backend/frontend',
             icons: [reactIcon, mongoIcon, javaScriptIcon, htmlIcon, cssIcon]
         },
@@ -60,7 +60,7 @@ function Projects({darkMode, setDarkMode}) {
             picture: "1",
             link: 'https://bernardo-netflix-clone.herokuapp.com/',
             repository: 'https://github.com/BernardoRamalhete/netflixclone',
-            description: "A netflix clone web application that has full CRUD functionality using a mongoDB to save user's accounts and their profiles. In the app the user can create multiple profiles, delete then or edit, chaging the profile's name and photo. And when it comes to the netflix browse page, it's created using the TMDB API to dynamically provide the movie list and choose the featured movie.",
+            description: "A netflix clone web application that has full CRUD functionality using a NoSQL database to save user's accounts and their profiles. In the app the user can create multiple profiles, delete or edit then, chaging the profile's name and photo. The browse page was created using the TMDB API to dynamically provide the movie list and choose the featured movie.",
             infoTechs: 'Backend/frontend',
             icons: [reactIcon, mongoIcon, javaScriptIcon, htmlIcon, cssIcon]
         },
@@ -69,7 +69,7 @@ function Projects({darkMode, setDarkMode}) {
             picture: "2",
             link: 'https://paola-ramalhete.web.app/',
             repository: 'https://github.com/BernardoRamalhete/site-paola-ramalhete',
-            description: "Personal single page website made to a brazilian personal stylist. This site was made using react to make the content flow easier and faster, this with a minimalist design and the use of custom fonts make a clean and reactive website. The code is entirelly controled by react hooks, not utilising react-router to go from page to page. This way  the content is dynamically loaded as the user select between the options in the top menu.",
+            description: "Personal single page website made to a brazilian personal stylist. This site was made using react to make the content flow easier and faster. This with a minimalist design and the use of a custom font make a clean and reactive website.",
             infoTechs: 'Frontend',
             icons: [reactIcon, javaScriptIcon, htmlIcon, cssIcon]
         },

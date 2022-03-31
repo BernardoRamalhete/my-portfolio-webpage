@@ -17,7 +17,7 @@ function Cards({ cellPhone, darkMode, blured}) {
   const cards = [
     {
       title: 'React',
-      description: 'Powerfull library created by Facebook. React is a User Interface (UI) library used to make dinamic and modular front front-white-end interfaces.',
+      description: 'Powerfull library created by Facebook. React is a User Interface (UI) library used to make dinamic and modular frontend interfaces.',
       functionEnter: () => setReactIconColor(iconColors.color2),
       functionLeave: () => setReactIconColor(iconColors.color1),
       icon: <svg className='card-icon' viewBox="0 0 128 128">

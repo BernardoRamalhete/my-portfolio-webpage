@@ -60,7 +60,7 @@ function About({darkMode, setDarkMode}) {
                         <img src={bernardoramalhete} alt='Bernardo Ramalhete' className='bernardo-ramalhete' />
                     </div>
                         <p className={darkMode ? 'about-text':'about-text about-text-white'}>
-                            My name is Bernardo Ramalhete, I'm 25 years old, married, father of two. I started coding back in 2014, when I got into the Universidade do Espírito Santo, in the Computer Science major. I completed half of the course before dropping out due to family problems. Then 2 years later I got back into development, more specifically web applications. Since then I made a goal to code better each day, with more responsive, faster and cleaner code apps as possible!
+                            My name is Bernardo Ramalhete and I begin codding when I was 17. I entered college into a Computer Science course, with I go through before being forced to drop out for family related problems. I then got into design and worked as a freelancer for about 4 years. So in 2021 I got back into studying to become a developer, reading everything I could find, making the Harvard's CS50 course to reinforce my base knowledge, and a online bootcamp to get me up to speed with the currently techs and putting in the work in some projects. Now I'm seeking a oportunity to launch a career in the web development industry. Being eager to learn more and solve real world problems. 
                         </p>
                     </div>
                         <div className={darkMode ? 'about-contact':'about-contact about-contact-white'}>
